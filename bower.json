@@ -1,0 +1,19 @@
+{
+  "name": "policyfinderapp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "CitThrough"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CitThrough/PolicyFinder",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ]
+}
