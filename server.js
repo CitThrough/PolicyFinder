@@ -1,21 +1,21 @@
-'use strict';
+"use strict";
 
-var express = require('express');
+var express = require("express");
 
-var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+var env = process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
 var app = express();
 
 
-app.set('views', __dirname + '/server/views');
-app.set('view engine', 'jade');
+app.set("views", __dirname + "/server/views");
+app.set("view engine", "jade");
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + "/public"));
 
-app.get('*', function(req, res){
-    res.render('index');
+app.get("*", function(req, res){
+    res.render("index");
 });
 
 var port = 3030;
 app.listen(port);
-console.log('Listing on port' + port + '...');
+console.log("Listing on port" + port + "...");
